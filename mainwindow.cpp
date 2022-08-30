@@ -70,7 +70,7 @@ void MainWindow::bluetoothError(QBluetoothDeviceDiscoveryAgent::Error error)
             ui->errorLabel->setText(QString("Bluetooth Error: Error reading from bluetooth device"));
             break;
         case QBluetoothDeviceDiscoveryAgent::PoweredOffError:
-            ui->errorLabel->setText(QString("Bluetooth Error: Bluetooth module is turned of or unavailable"));
+            ui->errorLabel->setText(QString("Bluetooth Error: Bluetooth module is turned off or unavailable"));
             break;
         case QBluetoothDeviceDiscoveryAgent::InvalidBluetoothAdapterError:
             ui->errorLabel->setText(QString("Bluetooth Error: Bluetooth adapter error"));
