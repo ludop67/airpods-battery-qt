@@ -9,22 +9,23 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    chargestatus.cpp \
-    main.cpp \
-    mainwindow.cpp \
-    devicebatteryinfo.cpp
+    src/chargestatus.cpp \
+    src/main.cpp \
+    src/mainwindow.cpp \
+    src/devicebatteryinfo.cpp
 
 HEADERS += \
-    airpodsspecs.h \
-    chargestatus.h \
-    mainwindow.h \
-    devicebatteryinfo.h
+    src/airpodsspecs.h \
+    src/chargestatus.h \
+    src/mainwindow.h \
+    src/devicebatteryinfo.h
 
 FORMS += \
-    mainwindow.ui \
-    devicebatteryinfo.ui
+    ui/mainwindow.ui \
+    ui/devicebatteryinfo.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
